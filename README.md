@@ -58,7 +58,7 @@ Code Snippet:
 
 ## Priority Matrix
 
-![Priority Matrix](https://app.uxpin.com/edit/8770242/#?id_page=135172137)
+![Priority Matrix](https://i.imgur.com/NnG9CBg.jpg)
 
 ## Timeframes
 
