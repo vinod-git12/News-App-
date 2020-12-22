@@ -8,14 +8,18 @@ const newsData =  response.data.articles
 const value = (e) => {
   e.preventDefault()
   const sourceValue = document.querySelector("#choices").value
+  console.log(sourceValue)
   getData(sourceValue)
+  
 }
 getData()
+
 
  const newsInfo = (newsData) => {
    return newsData.forEach((source) => {
      const option = document.createElement("option")
      option.textContent = source.source.name
+     console.log(source.source.name)
      document.querySelector("#choices").appendChild(option)
      
      
@@ -28,18 +32,20 @@ getData()
 //   }
 // }
 
-const search = document.querySelector("#search")
-search.addEventListener("click", 
 
-function (displayInfo) {
+function displayInfo() {
   let title = document.createElement('h1')
-  title.innerHTML = newsData[0].title
+  title.innerHTML = newsData[0].source.name
   console.log(newsData[0].title)
   const removeChoice1 = document.querySelector('#append-choices')
   removeChoice1.appendChild(title)
-  
   return title
-})
+}
+
+const search = document.querySelector("#search")
+search.addEventListener("click", displayInfo)
+
+
 
 
 
