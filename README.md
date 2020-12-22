@@ -47,8 +47,8 @@ Code Snippet:
 
 | Day       | Deliverable | Status |
 | ---------- | ------------- | ----------- |
-| Dec 17       | Prompt/Wireframe/Priority Matrix/Timeframes         | xxx         |
-| Dec 21        | Project Approval        | xxx         |
+| Dec 17       | Prompt/Wireframe/Priority Matrix/Timeframes         | completed         |
+| Dec 21        | Project Approval        | completed        |
 | Dec 22        | Core Application Structure (HTML, CSS, JS, etc.)         | xxx         |
 | Dec 23 | Pseudocode/Actual         | xxx         |
 | Dec 23 |     MVP        |    xxx     |
