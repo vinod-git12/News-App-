@@ -3,7 +3,7 @@ const getData = async () => {
 
 const newsData =  response.data.articles
   console.log(newsData)
-  newsInfo(newsData)
+  //newsInfo(newsData)
 }
 const value = (e) => {
   e.preventDefault()
@@ -19,31 +19,53 @@ getData()
    return newsData.forEach((source) => {
      const option = document.createElement("option")
      option.textContent = source.source.name
-     console.log(source.source.name)
-     document.querySelector("#choices").appendChild(option)
-     
-     
+    //  console.log(source.source.name)
+     //const sourceName = source.source.name
+     document.querySelector("#choices").appendChild(option) 
+  
+     //displayInfo(newsData)
  })
  }
-// function removeChoice() {
-//   const removeChoice1 = document.querySelector('#append-choices')
-//   while (removeChoice1.lastChild) {
-//     removeChoice1.removeChild(removeChoice1.lastChild)
-//   }
-// }
 
 
-function displayInfo() {
-  let title = document.createElement('h1')
-  title.innerHTML = newsData[0].source.name
-  console.log(newsData[0].title)
+function removeChoice() {
   const removeChoice1 = document.querySelector('#append-choices')
-  removeChoice1.appendChild(title)
-  return title
+  while (removeChoice1.lastChild) {
+    removeChoice1.removeChild(removeChoice1.lastChild)
+  }
 }
 
+
+// function displayInfo(newsData) {
+//   // let title = document.createElement('h1')
+//   // title.textContent = newsData[0].title
+  
+//   console.log(newsData[0].title)
+//   const removeChoice1 = document.querySelector('#append-choices')
+//   removeChoice1.appendChild(title)
+//   //console.log(newsInfo)
+  
+  
+// }
+
+//const displayInfo = (newsData) => {
+  const displayInfo = () => {
+  // return newsData.forEach((article) => {
+  //   let title = document.createElement('h1')
+  // title.textContent = newsData[0].title
+  // console.log(newsData[0].title)
+  // const removeChoice1 = document.querySelector('#append-choices')
+  // removeChoice1.appendChild(title)
+  // return title
+    // displayInfo(newsData)
+    
+  }
+
+
 const search = document.querySelector("#search")
-search.addEventListener("click", displayInfo)
+search.addEventListener("click", function () {
+  console.log("plz work")
+})
 
 
 
