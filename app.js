@@ -1,9 +1,9 @@
 const getData = async () => {
-  let response = await axios.get(`http://newsapi.org/v2/top-headlines?country=us&apiKey=e9d46735e9d4461193696028432e3092`)
+  let response = await axios.get(`http://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=e9d46735e9d4461193696028432e3092`)
 
 const newsData =  response.data.articles
   console.log(newsData)
-  //newsInfo(newsData)
+ newsInfo(newsData)
 }
 const value = (e) => {
   e.preventDefault()
